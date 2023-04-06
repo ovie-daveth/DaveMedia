@@ -4,6 +4,7 @@ import {VideoCard, ChannelCard} from './'
 import { Link } from 'react-router-dom'
 
 const Videos = ({videos}) => {
+  if(!videos?.length) return 'Loading...'
   return (
     <Stack sx={{display: 'grid', gridTemplateColumns: {lg: 'repeat(4, 1fr)', md: 'repeat(3, 1fr)', sm: 'repeat(2, 1fr)'}, gap: '1rem', margin: 'auto', flexWrap: 'wrap'}}>
       {

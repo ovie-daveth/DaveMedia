@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Box } from '@mui/material';
 import { ChannelDetail, VideoDetail, Feed, SearchFeed, Navbar } from './components'
+import './index.css'
 
 const App = () => (
     <BrowserRouter>
